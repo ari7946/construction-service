@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
 import headerStyles from './header.module.scss'
+import logo from '../../images/logo3.png'
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -23,7 +24,8 @@ const Header = () => {
           to="/"
         >
           {" "}
-          {data.site.siteMetadata.title}
+          {/* {data.site.siteMetadata.title} */}
+          <img src={logo} alt="Junior's Inc" />
         </Link>
       </h1>
       <nav>
@@ -50,9 +52,9 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/about"
+              to="/projects"
             >
-              About
+              Projects
             </Link>
           </li>
           <li>
