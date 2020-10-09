@@ -11,8 +11,8 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'Gatsby Bootcamp',
-    author: 'Ari Mercado',
+    title: "Junior's Construction Inc",
+    author: "Junior's Construction Inc",
   },
   plugins: [
     'gatsby-plugin-fontawesome-css',
@@ -21,7 +21,7 @@ module.exports = {
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       }
     },
     'gatsby-plugin-sass',
@@ -29,7 +29,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
-        path: `${__dirname}/src/`
+        path: `${__dirname}/src/`,
       }
     },
     'gatsby-plugin-sharp',
