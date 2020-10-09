@@ -1,0 +1,25 @@
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 0;
+
+  li {
+    padding: 2rem 3rem;
+
+    .nav-item {
+      color: #F18052;
+      font-size: 1.3rem;
+      text-decoration: none;
+
+      &:hover {
+        color: #666666;
+      }
+
+      .active-nav-item {
+        color: #333333;
+      }
+    }
+  }
+
+}

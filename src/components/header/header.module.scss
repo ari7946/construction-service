@@ -1,5 +1,7 @@
 .header {
-  padding: 1rem 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title {
@@ -8,23 +10,21 @@
   text-decoration: none;
 }
 
-.nav-list {
+.contact {
   display: flex;
-  list-style-type: none;
-  margin: 0;
+  h1 {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    font-weight: 300;
+
+    span {
+     float: left;
+     padding-left: .4rem;
+    }
+
+    .icon {
+      color: #f26522;
+    }
+  }
 }
 
-.nav-item {
-  color: #999999;
-  font-size: .9rem;
-  margin-right: 1.3rem;
-  text-decoration: none;
-}
-
-.nav-item:hover {
-  color: #666666;
-}
-
-.active-nav-item {
-  color: #333333;
-}

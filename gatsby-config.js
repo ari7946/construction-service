@@ -15,6 +15,7 @@ module.exports = {
     author: 'Ari Mercado',
   },
   plugins: [
+    'gatsby-plugin-fontawesome-css',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',
