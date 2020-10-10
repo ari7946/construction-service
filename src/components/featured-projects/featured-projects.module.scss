@@ -1,0 +1,13 @@
+.featured-projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 3rem;
+
+  img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

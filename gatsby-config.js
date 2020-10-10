@@ -11,8 +11,8 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Junior's Construction Inc",
-    author: "Junior's Construction Inc",
+    title: "Junior's Construction Inc.",
+    author: "Junior's Construction Inc.",
   },
   plugins: [
     'gatsby-plugin-fontawesome-css',
