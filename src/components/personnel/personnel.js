@@ -17,7 +17,7 @@ const Personnel = () => {
         </p>
       </div>
 
-      <dir className={personnelStyles.person}>
+      <div className={personnelStyles.person}>
         <img src={victor} alt="VICTOR LOPEZ" />
         <h4>VICTOR LOPEZ</h4>
         <h5>General Projects Manager</h5>
@@ -25,7 +25,7 @@ const Personnel = () => {
           Victor has 16 years of experience in metal and wood framing, drywall,
           concrete work, demo, painting, plumbing and project management.
         </p>
-      </dir>
+      </div>
     </section>
   )
 }

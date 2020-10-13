@@ -16,6 +16,7 @@ const Menu = () => {
             Home
           </Link>
         </li>
+
         <li>
           <Link
             className={menuStyles.navItem}
@@ -25,6 +26,7 @@ const Menu = () => {
             Blog
           </Link>
         </li>
+
         <li>
           <Link
             className={menuStyles.navItem}
@@ -34,6 +36,7 @@ const Menu = () => {
             Projects
           </Link>
         </li>
+        
         <li>
           <Link
             className={menuStyles.navItem}

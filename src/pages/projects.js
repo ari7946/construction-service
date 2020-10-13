@@ -1,15 +1,39 @@
 import React from 'react';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 
 import Layout from '../components/layout/layout';
 import Head from "../components/head"
 
-const Projects = () => {
+const ProjectsPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allContentfulProjects {
+        edges {
+          node {
+            name
+            media {
+              file {
+                fileName
+                url
+                contentType
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  console.log('data',data)
+
   return (
     <Layout>
       <Head title="Projects" />
       <h1>Projects</h1>
+      {data.allContentfulProjects.edges.map(({ node }) => (
+        <h2>{node.name}</h2>
+      ))}
     </Layout>
   )
 }
 
-export default Projects;
+export default ProjectsPage;

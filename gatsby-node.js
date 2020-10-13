@@ -14,10 +14,13 @@ const path = require('path');
 //   }
 // }
 
-module.exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
-  const blogTemplate = path.resolve('./src/templates/blog.js');
-  const res = await graphql(`
+// Creates Pages for Blog posts
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  const blogTemplate = path.resolve("./src/templates/blog.js")
+  const projectsTemplate = path.resolve("./src/templates/projects.js")
+
+  const queryBlogPosts = await graphql(`
     query {
       allContentfulBlogPost {
         edges {
@@ -29,7 +32,54 @@ module.exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  res.data.allContentfulBlogPost.edges.forEach((edge) => {
+  const queryProjects = await graphql(`
+    query {
+      allContentfulProjects {
+        edges {
+          node {
+            name
+            media {
+              file {
+                fileName
+                url
+                contentType
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  // https://gist.github.com/codeguy/6684588#gistcomment-3361909
+  const slugify = text => {
+    return text
+      .toString()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]+/g, "")
+      .replace(/--+/g, "-")
+  }
+
+  // console.log(JSON.stringify(res.data.allContentfulProjects.edges, null, 4))
+  queryProjects.data.allContentfulProjects.edges.forEach(edge => {
+    console.log('edge', edge)
+    let slug = slugify(edge.node.name)
+
+    createPage({
+      component: projectsTemplate,
+      path: `/projects/${slug}`,
+      context: {
+        slug,
+        node: edge.node,
+      },
+    })
+  })
+
+  queryBlogPosts.data.allContentfulBlogPost.edges.forEach(edge => {
     // 1. Get path to template
     // 2. Get markdown data
     // 3. create new pages
@@ -42,3 +92,4 @@ module.exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
+
