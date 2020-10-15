@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 
 import Layout from '../components/layout/layout';
 import Head from "../components/head"
+import projectStyles from '../components/projects/projects.module.scss'
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -23,7 +24,6 @@ const ProjectsPage = () => {
       }
     }
   `)
-  console.log('data',data)
   const slugify = text => {
     return text
       .toString()
@@ -43,7 +43,7 @@ const ProjectsPage = () => {
       {data.allContentfulProjects.edges.map(({ node }) => {
         let slug = slugify(node.name);
         return (
-          <Link to={`/projects/${slug}`}>
+          <Link to={`${slug}`}>
             <h2>{node.name}</h2>
           </Link>
         )
