@@ -4,6 +4,8 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout/layout";
 import Head from "../components/head";
 
+import projectStyles from '../components/projects/projects.module.scss';
+
 export const query = graphql`
   query {
     allContentfulProjects {
@@ -30,14 +32,13 @@ const Projects = props => {
     <Layout>
       <Head title={project.name} />
       <h1>{project.name}</h1>
+      <div className={projectStyles.projectGallery}>
       {project.media.map(({ file }) => {
         return (
-          <div>
-            <p>file name: {file.fileName}</p>
-            <p>URL: {file.url}</p>
-          </div>
+          <div><img src={file.url} alt="" /></div>
         )
       })}
+      </div>
     </Layout>
   )
 }
