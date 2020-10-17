@@ -26,7 +26,6 @@ export const query = graphql`
 `
 
 const Projects = props => {
-  console.log("props", props)
   let project = props.pageContext.node;
   return (
     <Layout>
