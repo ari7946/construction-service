@@ -1,12 +1,12 @@
 import React from "react"
-import acapulco from '../../images/acapulco.jpg'
-import ave12 from "../../images/ave-12.jpg"
-import chevys from "../../images/chevys.jpg"
-import lasBrisas from "../../images/las-brisas.jpg"
-import schoolRoof from "../../images/school-roof.jpg"
-import floorReinforcement from '../../images/floor-reinforcement.jpg'
-import whoSong from "../../images/whosong.jpg"
-import elTorito from "../../images/el-torito.jpg"
+import acapulco from '../../images/acapulco1.jpg'
+import ave12 from "../../images/ave-121.jpg"
+import chevys from "../../images/chevys1.jpg"
+import lasBrisas from "../../images/las-brisas1.jpg"
+import schoolRoof from "../../images/school-roof1.jpg"
+import floorReinforcement from '../../images/floor-reinforcement1.jpg'
+import whoSong from "../../images/whosong1.jpg"
+import elTorito from "../../images/el-torito1.jpg"
 
 
 import featuredProjectsStyles from './featured-projects.module.scss';

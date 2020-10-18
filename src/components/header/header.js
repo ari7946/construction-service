@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 import headerStyles from './header.module.scss'
-import logo from '../../images/logo3.png'
+import logo from '../../images/logo31.png'
 
 const Header = () => {
   const data = useStaticQuery(graphql`

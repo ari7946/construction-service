@@ -1,6 +1,6 @@
 import React from 'react';
-import victor from '../../images/Victor_Lopez.jpg'
-import carlos from '../../images/Carlos_Salazar.jpg'
+import victor from '../../images/Victor_Lopez1.jpg'
+import carlos from '../../images/Carlos_Salazar1.jpg'
 
 import personnelStyles from './personnel.module.scss';
 
