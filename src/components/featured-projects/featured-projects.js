@@ -11,7 +11,7 @@ import elTorito from "../../images/el-torito.jpg"
 
 import featuredProjectsStyles from './featured-projects.module.scss';
 
-const featuredProjects = () => {
+const FeaturedProjects = () => {
   return (
     <section>
       <h1>Featured Projects</h1>
@@ -48,4 +48,4 @@ const featuredProjects = () => {
   )
 }
 
-export default featuredProjects;
+export default FeaturedProjects;

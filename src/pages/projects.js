@@ -24,6 +24,7 @@ const ProjectsPage = () => {
       }
     }
   `)
+  
   const slugify = text => {
     return text
       .toString()
