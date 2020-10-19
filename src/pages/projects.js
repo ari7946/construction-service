@@ -25,6 +25,7 @@ const ProjectsPage = () => {
     }
   `)
   
+  
   const slugify = text => {
     return text
       .toString()
@@ -37,18 +38,41 @@ const ProjectsPage = () => {
       .replace(/--+/g, "-")
   }
 
+  const getAllProjectImages = () => {
+    return data.allContentfulProjects.edges.map(({ node }) => {
+      return node.media.map(({ file }) => {
+        return file.url
+      })
+    }).flat();
+  }
+
+  const allRandomProjectImages = getAllProjectImages().sort( () => .5 - Math.random() );
+
   return (
     <Layout>
       <Head title="Projects" />
       <h1>Projects</h1>
-      {data.allContentfulProjects.edges.map(({ node }) => {
-        let slug = slugify(node.name);
-        return (
-          <Link to={`${slug}`}>
-            <h2>{node.name}</h2>
-          </Link>
-        )
-      })}
+      <div className={projectStyles.projectsContainer}>
+        <div className={projectStyles.projectsMenu}>
+          {data.allContentfulProjects.edges.map(({ node }) => {
+            let slug = slugify(node.name);
+            return (
+              <Link to={`${slug}`}>
+                <h2>{node.name}</h2>
+              </Link>
+            )
+          })}
+        </div>
+        <div className={projectStyles.projectGallery}>
+          {allRandomProjectImages.map((imgUrl) => {
+            return (
+              <div className={projectStyles.projectImageContainer}>
+                <img className={projectStyles.projectImage} src={imgUrl} alt='' />
+              </div>
+            )
+          })}
+        </div>
+      </div>
     </Layout>
   )
 }
