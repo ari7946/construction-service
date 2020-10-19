@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 import Layout from "../components/layout/layout";
 import Head from "../components/head";
@@ -27,10 +27,17 @@ export const query = graphql`
 
 const Projects = props => {
   let project = props.pageContext.node;
+  // console.log('project', props.data.allContentfulProjects.edges.node)
   return (
     <Layout>
       <Head title={project.name} />
-      <h1>{project.name}</h1>
+      <h1 className={projectStyles.projectsTitleContainer}>
+        <Link to="/projects">
+          Projects
+        </Link>
+        <span>{project.name}</span>
+      </h1>
+
       <div className={projectStyles.projectGallery}>
       {project.media.map(({ file }) => {
         return (
