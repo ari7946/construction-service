@@ -1,17 +1,35 @@
+.projects-container {
+  display: flex;
+  justify-items: space-between;
+}
+
 .project-gallery {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  align-self: stretch;
+  justify-content: center;
 
   .project-image-container {
-
     .project-image {
       height: auto;
       max-height: 400px;
       padding-right: .5rem;
       width: 100%;
-      max-width: 500px;
+      max-width: 640px;
       object-fit: cover;
+      padding-right: .3rem;
     }
   }
 }
+
+.projects-menu {
+  padding-right: 2rem;
+}
+
+.projects-title-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+
