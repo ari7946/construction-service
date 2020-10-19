@@ -34,7 +34,9 @@ const Projects = props => {
       <div className={projectStyles.projectGallery}>
       {project.media.map(({ file }) => {
         return (
-          <div><img src={file.url} alt="" /></div>
+          <div className={projectStyles.projectImageContainer}>
+            <img className={projectStyles.projectImage} src={file.url} alt={project.name} />
+          </div>
         )
       })}
       </div>
