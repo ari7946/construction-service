@@ -66,7 +66,6 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // console.log(JSON.stringify(res.data.allContentfulProjects.edges, null, 4))
   queryProjects.data.allContentfulProjects.edges.forEach(edge => {
-    console.log('edge', edge)
     let slug = slugify(edge.node.name)
 
     createPage({
