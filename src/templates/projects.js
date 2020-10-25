@@ -1,5 +1,7 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronLeft} from "@fortawesome/free-solid-svg-icons"
 
 import Layout from "../components/layout/layout";
 import Head from "../components/head";
@@ -31,12 +33,14 @@ const Projects = props => {
   return (
     <Layout>
       <Head title={project.name} />
-      <h1 className={projectStyles.projectsTitleContainer}>
-        <Link to="/projects">
-          Projects
-        </Link>
-        <span>{project.name}</span>
-      </h1>
+      <div className={projectStyles.projectsTitleContainer}>
+        <h3 className={projectStyles.back}>
+          <Link to="/projects">
+          <FontAwesomeIcon icon={faChevronLeft} />{" "}PROJECTS
+          </Link>
+        </h3>
+        <h1 className={projectStyles.projectName}>{project.name}</h1>
+      </div>
 
       <div className={projectStyles.projectGallery}>
       {project.media.map(({ file }) => {

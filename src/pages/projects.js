@@ -57,7 +57,7 @@ const ProjectsPage = () => {
             let slug = slugify(node.name);
             return (
               <Link to={`${slug}`}>
-                <h2>{node.name}</h2>
+                <h2 className={projectStyles.menuTitle}>{node.name}</h2>
               </Link>
             )
           })}
