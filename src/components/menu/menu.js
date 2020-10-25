@@ -2,10 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 
 import menuStyles from './menu.module.scss'
+import SocialMedia from '../social-media/social-media'
 
 const Menu = () => {
   return (
-    <nav>
+    <nav className={menuStyles.menuContainer}>
       <ul className={menuStyles.navList}>
         <li>
           <Link
@@ -47,6 +48,8 @@ const Menu = () => {
           </Link>
         </li>
       </ul>
+
+      <SocialMedia className={menuStyles.SocialMedia} />
     </nav>
   )
 }

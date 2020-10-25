@@ -51,14 +51,13 @@ const ProjectsPage = () => {
   return (
     <Layout>
       <Head title="Projects" />
-      <h1>Projects</h1>
       <div className={projectStyles.projectsContainer}>
         <div className={projectStyles.projectsMenu}>
           {data.allContentfulProjects.edges.map(({ node }) => {
             let slug = slugify(node.name);
             return (
               <Link to={`${slug}`}>
-                <h2>{node.name}</h2>
+                <h2 className={projectStyles.menuTitle}>{node.name}</h2>
               </Link>
             )
           })}

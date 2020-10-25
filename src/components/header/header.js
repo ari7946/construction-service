@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import ContactInfo from '../contact-info/contact-info';
 
 import headerStyles from './header.module.scss'
 import logo from '../../images/logo31.png'
+import Menu from '../menu/menu';
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -19,34 +19,17 @@ const Header = () => {
   `)
 
   return (
-    <header className={headerStyles.header}>
-      <div>
-        <Link className={headerStyles.title} to="/">
-          <img src={logo} alt={data.site.siteMetadata.title} />
-        </Link>
-      </div>
-      <div className={headerStyles.contact}>
-        <h1>
-          <span className="icon">
-            <FontAwesomeIcon icon={faPhone} size="2x" />
-          </span>
-          <span>
-            CALL US
-            <br />
-            (562) 309-7784
-          </span>
-        </h1>
-        <h1>
-          <span>
-            <FontAwesomeIcon icon={faEnvelope} size="2x" />
-          </span>
-          <span>
-            EMAIL US <br />
-            juniors2016inc@gmail.com
-          </span>
-        </h1>
-      </div>
-    </header>
+    <div className={headerStyles.headerContainer}>
+      <header className={headerStyles.header}>
+        <div className={headerStyles.logo}>
+          <Link to="/">
+            <img src={logo} alt={data.site.siteMetadata.title} />
+          </Link>
+        </div>
+        <ContactInfo />
+      </header>
+      <Menu />
+    </div>
   )
 }
 

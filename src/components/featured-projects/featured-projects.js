@@ -14,7 +14,6 @@ import featuredProjectsStyles from './featured-projects.module.scss';
 const FeaturedProjects = () => {
   return (
     <section>
-      <h1>Featured Projects</h1>
       <div className={featuredProjectsStyles.featuredProjects}>
         <div>
           <img src={acapulco} alt="Acapulco restaurant" />
