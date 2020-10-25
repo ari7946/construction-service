@@ -12,7 +12,6 @@ const Layout = props => {
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
         <Header />
-        <Menu />
         {props.children}
       </div>
       <Footer />

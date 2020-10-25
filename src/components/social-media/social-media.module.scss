@@ -1,0 +1,8 @@
+.container {
+  min-width: 10rem;
+  display: flex;
+  div {
+    padding: 0.6rem 1.7rem;
+    color: var(--color-primary);
+  }
+}

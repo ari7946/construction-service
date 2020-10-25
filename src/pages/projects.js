@@ -51,7 +51,6 @@ const ProjectsPage = () => {
   return (
     <Layout>
       <Head title="Projects" />
-      <h1>Projects</h1>
       <div className={projectStyles.projectsContainer}>
         <div className={projectStyles.projectsMenu}>
           {data.allContentfulProjects.edges.map(({ node }) => {

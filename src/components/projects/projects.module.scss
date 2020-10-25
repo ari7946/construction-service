@@ -7,16 +7,18 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  align-self: stretch;
   justify-content: center;
 
   .project-image-container {
+    flex-grow: 1;
+    max-width: 640px;
+    align-self: stretch;
     .project-image {
+      display: block;
       height: auto;
       max-height: 400px;
       padding-right: .5rem;
       width: 100%;
-      max-width: 640px;
       object-fit: cover;
       padding-right: .3rem;
     }

@@ -1,0 +1,29 @@
+.contact-container {
+  display: flex;
+  width: 39rem;
+  .contact {
+    margin-top: 2rem;
+    display: flex;
+    width: 50%;
+
+    .contact-icon {
+      color: var(--color-primary);
+    }
+
+    .contact-cta {
+      margin-left: 1rem;
+      color: var(--color-blue-darkest);
+
+      h3 {
+        margin-bottom: 0.2rem;
+        color: var(--color-primary-darker);
+      }
+
+      p {
+        color: var(--color-primary-darkest);
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}
