@@ -1,12 +1,13 @@
-import React from "react";
-import { graphql, Link } from "gatsby";
+import React from "react"
+import { graphql, Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronLeft} from "@fortawesome/free-solid-svg-icons"
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons"
 
-import Layout from "../components/layout/layout";
-import Head from "../components/head";
+import Layout from "../components/layout/layout"
+import Head from "../components/head"
+import ProjectsGrid from '../components/projects-grid/projects-grid';
 
-import projectStyles from '../components/projects/projects.module.scss';
+import projectStyles from "./projects-template.module.scss"
 
 export const query = graphql`
   query {
@@ -28,31 +29,24 @@ export const query = graphql`
 `
 
 const Projects = props => {
-  let project = props.pageContext.node;
-  // console.log('project', props.data.allContentfulProjects.edges.node)
+  const project = props.pageContext.node;
+  const images = project.media.map(({ file }) => file.url);
+
   return (
     <Layout>
       <Head title={project.name} />
       <div className={projectStyles.projectsTitleContainer}>
         <h3 className={projectStyles.back}>
           <Link to="/projects">
-          <FontAwesomeIcon icon={faChevronLeft} />{" "}PROJECTS
+            <FontAwesomeIcon icon={faChevronLeft} /> PROJECTS
           </Link>
         </h3>
         <h1 className={projectStyles.projectName}>{project.name}</h1>
       </div>
 
-      <div className={projectStyles.projectGallery}>
-      {project.media.map(({ file }) => {
-        return (
-          <div className={projectStyles.projectImageContainer}>
-            <img className={projectStyles.projectImage} src={file.url} alt={project.name} />
-          </div>
-        )
-      })}
-      </div>
+      <ProjectsGrid images={images} />
     </Layout>
   )
 }
 
-export default Projects;
+export default Projects

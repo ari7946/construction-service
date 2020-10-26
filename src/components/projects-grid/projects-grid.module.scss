@@ -1,0 +1,38 @@
+.grid-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .grid-image-container {
+    flex-grow: 2;
+    max-width: 640px;
+    align-self: stretch;
+    height: auto;
+    @media only screen and (max-width: 1600px) {
+      max-width: 500px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      max-width: 600px;
+    }
+
+    .grid-image {
+      display: block;
+      height: auto;
+      max-height: 400px;
+      padding-right: 0.5rem;
+      width: 100%;
+      object-fit: cover;
+      padding-right: 0.3rem;
+
+      @media only screen and (max-width: 1600px) {
+        max-height: 360px;
+      }
+
+      @media only screen and (max-width: 800px) {
+        max-height: 300px;
+      }
+    }
+  }
+}

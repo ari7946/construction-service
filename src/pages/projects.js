@@ -3,7 +3,8 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 
 import Layout from '../components/layout/layout';
 import Head from "../components/head"
-import projectStyles from '../components/projects/projects.module.scss'
+import ProjectsGrid from '../components/projects-grid/projects-grid'
+import projectStyles from './projects-page.module.scss'
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -62,15 +63,8 @@ const ProjectsPage = () => {
             )
           })}
         </div>
-        <div className={projectStyles.projectGallery}>
-          {allRandomProjectImages.map((imgUrl) => {
-            return (
-              <div className={projectStyles.projectImageContainer}>
-                <img className={projectStyles.projectImage} src={imgUrl} alt='' />
-              </div>
-            )
-          })}
-        </div>
+
+        <ProjectsGrid images={allRandomProjectImages} />
       </div>
     </Layout>
   )
