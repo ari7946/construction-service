@@ -4,8 +4,16 @@
   align-items: center;
   height: 3rem;
   background-color: #fff;
-  border-top: 1px solid var(--color-primary-lightest);
-  border-bottom: 1px solid var(--color-primary-lightest);
+  border-top: 1px solid var(--color-primary-light);
+  border-bottom: 1px solid var(--color-primary-light);
+
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    // position: relative;
+  }
+
   .nav-list {
     align-items: center;
     display: flex;
@@ -13,6 +21,9 @@
     justify-content: flex-start;
     margin: 0;
     height: 2rem;
+    @media only screen and (max-width: 650px) {
+      flex-wrap: wrap;
+    }
 
     li {
       padding: 0.9rem 3rem;
