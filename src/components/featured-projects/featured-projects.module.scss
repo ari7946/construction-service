@@ -1,10 +1,43 @@
 .featured-projects {
   width: 100%;
   display: grid;
-  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-columns: 4fr 4fr 4fr 4fr;
   grid-template-rows: 1fr;
+  column-gap: 0.3rem;
   margin-bottom: 3rem;
   padding-top: 5rem;
+
+  .img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    div {
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+      opacity: 80%;
+      padding: 0 0.3rem;
+    }
+  }
+
+  @media only screen and (max-width: 1250px) {
+    grid-template-columns: 3fr 3fr 3fr;
+
+    .colFour {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    grid-template-columns: 3fr 3fr;
+    .colFour {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    grid-template-columns: 2fr 2fr;
+  }
 
   img {
     width: 100%;

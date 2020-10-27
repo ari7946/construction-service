@@ -15,32 +15,52 @@ const FeaturedProjects = () => {
   return (
     <section>
       <div className={featuredProjectsStyles.featuredProjects}>
-        <div>
-          <img src={acapulco} alt="Acapulco restaurant" />
-          <h3>Las Brisas</h3>
-          <img src={schoolRoof} alt="school roof" />
-          <h3>School Roof</h3>
+        <div className={featuredProjectsStyles.colOne}>
+          <div className={featuredProjectsStyles.imgContainer}>
+            <img src={acapulco} alt="Acapulco restaurant" />
+            <div className={featuredProjectsStyles.title}>Las Brisas</div>
+          </div>
+
+          <div className={featuredProjectsStyles.imgContainer}>
+            <img src={schoolRoof} alt="school roof" />
+            <div>School Roof</div>
+          </div>
         </div>
 
-        <div>
-          <img src={ave12} alt="Ave12" />
-          <h3>Bath Remodel</h3>
-          <img src={floorReinforcement} alt="floor reinforcement" />
-          <h3>Floor Reinforcement</h3>
+        <div className={featuredProjectsStyles.colTwo}>
+          <div className={featuredProjectsStyles.imgContainer}>
+            <img src={lasBrisas} alt="Las Brisas restaurant" />
+            <div>Las Brisas</div>
+          </div>
+
+          <div className={featuredProjectsStyles.imgContainer}>
+            <img src={floorReinforcement} alt="floor reinforcement" />
+            <div>Floor Reinforcement</div>
+          </div>
         </div>
 
-        <div>
-          <img src={chevys} alt="chevy's restaurant" />
-          <h3>Chevy's</h3>
-          <img src={whoSong} alt="Who Song and Larry's restaurant" />
-          <h3>Who Song and Larry's</h3>
+        <div className={featuredProjectsStyles.colThree}>
+          <div className={featuredProjectsStyles.imgContainer}>
+            <img src={chevys} alt="chevy's restaurant" />
+            <div>Chevy's</div>
+          </div>
+
+          <div className={featuredProjectsStyles.imgContainer}>
+            <img src={whoSong} alt="Who Song and Larry's restaurant" />
+            <div>Who Song and Larry's</div>
+          </div>
         </div>
 
-        <div>
-          <img src={lasBrisas} alt="Las Brisas restaurant" />
-          <h3>Las Brisas</h3>
-          <img src={elTorito} alt="El Torito Restaurant" />
-          <h3>El Torito</h3>
+        <div className={featuredProjectsStyles.colFour}>
+          <div className={featuredProjectsStyles.imgContainer}>
+            <img src={ave12} alt="Ave12" />
+            <div>Bath Remodel</div>
+          </div>
+
+          <div className={featuredProjectsStyles.imgContainer}>
+            <img src={elTorito} alt="El Torito Restaurant" />
+            <div>El Torito</div>
+          </div>
         </div>
       </div>
     </section>
