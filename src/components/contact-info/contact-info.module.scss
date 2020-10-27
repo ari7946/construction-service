@@ -1,6 +1,10 @@
 .contact-container {
   display: flex;
+  justify-content: flex-end;
   width: 39rem;
+  &:last-child .contact-icon {
+    margin-left: 3rem;
+  }
 
   @media only screen and (max-width: 1200px) {
     width: 35rem;
@@ -8,17 +12,23 @@
 
   @media only screen and (max-width: 1050px) {
     width: 100%;
-    margin-top: 0;
+    margin: 2rem auto;
+    justify-content: space-around;
+
+    &:last-child .contact-icon {
+      margin-left: 0;
+    }
   }
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
+    margin: 0.5 auto;
   }
 
   .contact {
     margin-top: 2rem;
     display: flex;
-    width: 50%;
+    // width: 50%;
     @media only screen and (max-width: 600px) {
       width: 100%;
       margin-top: 0.5rem;
