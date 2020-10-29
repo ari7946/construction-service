@@ -35,16 +35,18 @@ const Projects = props => {
   return (
     <Layout>
       <Head title={project.name} />
-      <div className={projectStyles.projectsTitleContainer}>
-        <h3 className={projectStyles.back}>
-          <Link to="/projects">
-            <FontAwesomeIcon icon={faChevronLeft} /> PROJECTS
-          </Link>
-        </h3>
-        <h1 className={projectStyles.projectName}>{project.name}</h1>
-      </div>
+      <div className={projectStyles.projectsTemplateContainer}>
+        <div className={projectStyles.projectsTitleWrapper}>
+          <h3 className={projectStyles.back}>
+            <Link to="/projects">
+              <FontAwesomeIcon icon={faChevronLeft} /> PROJECTS
+            </Link>
+          </h3>
+          <h1 className={projectStyles.projectName}>{project.name}</h1>
+        </div>
 
-      <ProjectsGrid images={images} />
+        <ProjectsGrid images={images} />
+      </div>
     </Layout>
   )
 }
