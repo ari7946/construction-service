@@ -57,11 +57,11 @@ $bp-smallest: 31.25em; // 500px
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
-  box-sizing: inherit;
+  box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px, 10px / 16px = 62.5%
 
   @media only screen and (max-width: $bp-large) {

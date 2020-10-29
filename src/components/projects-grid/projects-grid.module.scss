@@ -5,10 +5,10 @@
   justify-content: center;
 
   .grid-image-container {
-    flex-grow: 2;
     max-width: 640px;
-    align-self: stretch;
+    justify-content: stretch;
     height: auto;
+    position: relative;
     @media only screen and (max-width: 1600px) {
       max-width: 500px;
     }
@@ -19,15 +19,15 @@
 
     .grid-image {
       display: block;
-      height: auto;
-      max-height: 400px;
+      max-height: 300px;
       padding-right: 0.5rem;
       width: 100%;
       object-fit: cover;
-      padding-right: 0.3rem;
+      padding-right: 0.4rem;
+      margin-bottom: 0.4rem;
 
       @media only screen and (max-width: 1600px) {
-        max-height: 360px;
+        max-height: 300px;
       }
 
       @media only screen and (max-width: 800px) {

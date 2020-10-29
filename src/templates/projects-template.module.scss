@@ -1,16 +1,31 @@
-.projects-title-container {
+.projects-template-container {
+  margin-top: 3.5rem;
+  padding-bottom: 10rem;
+}
+
+.projects-title-wrapper {
   display: flex;
   align-items: baseline;
   justify-content: space-evenly;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
   .back {
     a {
       text-decoration: none;
-      color: var(--color-blue);
+      color: var(--color-blue-dark);
     }
   }
 
   .project-name {
     color: var(--color-primary);
     text-transform: uppercase;
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 0.3;
+    }
   }
 }
