@@ -1,6 +1,9 @@
 import React from 'react';
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons"
 
 import Layout from '../components/layout/layout';
 import Head from "../components/head"
@@ -45,6 +48,12 @@ const Blog = (props) => {
     <Layout>
       <div className={blogStyles.blogTemplateContainer}>
         <Head title={props.data.contentfulBlogPost.title} />
+        <h3 className={blogStyles.back}>
+          <Link to="/blog">
+            <FontAwesomeIcon icon={faChevronLeft} /> BACK
+          </Link>
+        </h3>
+
         <h1>{props.data.contentfulBlogPost.title}</h1>
         <p>{props.data.contentfulBlogPost.publishedDate}</p>
         {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
