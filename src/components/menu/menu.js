@@ -22,9 +22,9 @@ const Menu = () => {
           <Link
             className={menuStyles.navItem}
             activeClassName={menuStyles.activeNavItem}
-            to="/blog"
+            to="/projects"
           >
-            Blog
+            Projects
           </Link>
         </li>
 
@@ -32,9 +32,9 @@ const Menu = () => {
           <Link
             className={menuStyles.navItem}
             activeClassName={menuStyles.activeNavItem}
-            to="/projects"
+            to="/blog"
           >
-            Projects
+            Blog
           </Link>
         </li>
         
