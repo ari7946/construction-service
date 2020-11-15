@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3.5rem;
+  height: 3.4rem;
   background-color: #ffffff;
   border-top: 1px solid var(--color-primary-lightest);
   border-bottom: 1px solid var(--color-primary-lightest);
@@ -32,11 +32,10 @@
 
     li {
       margin: 0;
-      // background-color: #ffffff;
       .nav-item {
         padding: 1rem 2rem;
         color: var(--color-blue-dark);
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-decoration: none;
         font-weight: 600;
         text-transform: uppercase;
@@ -53,12 +52,12 @@
       }
 
       .active-nav-item {
-        border-top: 2px solid var(--color-grey-light-3);
-        border-left: 2px solid var(--color-grey-light-3);
+        border-top: 1px solid var(--color-grey-light-3);
+        border-left: 1px solid var(--color-grey-light-3);
         border-bottom: 2px solid var(--color-blue-dark);
         border-right: 2px solid var(--color-blue-dark);
         color: var(--color-primary);
-        // background-color: var(--color-primary-light);
+        background-color: #ffffff;
       }
     }
   }
