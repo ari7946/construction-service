@@ -7,7 +7,7 @@ import personnelStyles from './personnel.module.scss';
 const Personnel = () => {
   return (
     <section className={personnelStyles.personnel}>
-      <div className={personnelStyles.person}>
+      <div className={personnelStyles.personCard}>
         <img src={carlos} alt="CARLOS SALAZAR" />
         <h4>CARLOS SALAZAR</h4>
         <h5>New Projects Manager</h5>
@@ -17,7 +17,7 @@ const Personnel = () => {
         </p>
       </div>
 
-      <div className={personnelStyles.person}>
+      <div className={personnelStyles.personCard}>
         <img src={victor} alt="VICTOR LOPEZ" />
         <h4>VICTOR LOPEZ</h4>
         <h5>General Projects Manager</h5>
