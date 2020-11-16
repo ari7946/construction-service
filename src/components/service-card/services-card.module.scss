@@ -1,0 +1,28 @@
+.card-container {
+  color: var(--color-primary);
+  flex-grow: 1;
+  h4 {
+    text-align: center;
+  }
+
+  .image-Container {
+    width: 100%;
+
+    @media only screen and (max-width: 650px) {
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      max-width: 95%;
+      margin-bottom: 0;
+      height: auto;
+      margin: 0 auto;
+
+      @media only screen and (max-width: 650px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
