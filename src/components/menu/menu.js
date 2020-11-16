@@ -32,6 +32,16 @@ const Menu = () => {
           <Link
             className={menuStyles.navItem}
             activeClassName={menuStyles.activeNavItem}
+            to="/services"
+          >
+            Services
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            className={menuStyles.navItem}
+            activeClassName={menuStyles.activeNavItem}
             to="/blog"
           >
             Blog
