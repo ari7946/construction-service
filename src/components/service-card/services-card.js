@@ -1,11 +1,14 @@
 import React from 'react';
-import servicesStyles from './services-card.module.scss';
+import cardStyles from './services-card.module.scss';
 
-const ServicesPage = ({ img }) => {
+const ServicesPage = ({ serviceName, imgSrc }) => {
+  console.log('services', imgSrc);
   return (
-    <div className={servicesStyles.servicesContainer}>
-      <p>Services Card</p>
-      <img src={img} alt="concrete"/>
+    <div className={cardStyles.cardContainer}>
+      <div className={cardStyles.imageContainer}>
+        <img src={imgSrc} alt={serviceName} />
+      </div>
+      <h4>{serviceName}</h4>
     </div>
   )
 }
