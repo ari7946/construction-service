@@ -17,6 +17,7 @@ const Menu = () => {
 
   useEffect(() => {
     window.addEventListener("resize", updateMedia);
+    updateMedia();
     return () => window.removeEventListener("resize", updateMedia);
   });
 
