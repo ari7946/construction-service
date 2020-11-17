@@ -42,7 +42,7 @@ const Menu = () => {
           <FontAwesomeIcon icon={status ? faTimes : faBars} />
         </div>
         {isOpen() &&
-          <ul className={`${menuStyles.navList}`}>
+          <ul className={menuStyles.navList}>
             <li>
               <Link
                 className={menuStyles.navItem}
