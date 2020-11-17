@@ -9,7 +9,7 @@ import SocialMedia from '../social-media/social-media'
 
 const Menu = () => {
   const [status, setStatus] = useState(false);
-  const [isDesktop, setDesktop] = useState(typeof (window !== 'undefined') && window.innerWidth > 800);
+  const [isDesktop, setDesktop] = useState(false);
 
   const updateMedia = () => {
     setDesktop(window.innerWidth > 800);
