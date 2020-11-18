@@ -9,7 +9,7 @@ import SocialMedia from '../social-media/social-media'
 
 const Menu = () => {
   const [status, setStatus] = useState(false);
-  const [isDesktop, setDesktop] = useState(false);
+  const [isDesktop, setDesktop] = useState(true);
 
   const updateMedia = () => {
     setDesktop(window.innerWidth > 800);
@@ -96,7 +96,7 @@ const Menu = () => {
           </ul>
         }
 
-        <SocialMedia className={menuStyles.SocialMedia} />
+        <SocialMedia />
       </nav>
     </>
   )
