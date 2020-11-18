@@ -5,8 +5,9 @@
   justify-content: center;
 
   .grid-image-container {
-    max-width: 640px;
+    // max-width: 640px;
     justify-content: stretch;
+    flex: 1 1 auto;
     height: auto;
     position: relative;
     @media only screen and (max-width: 1600px) {
@@ -32,7 +33,7 @@
       margin-bottom: 0.4rem;
 
       @media only screen and (max-width: 1600px) {
-        max-height: 300px;
+        // max-height: 300px;
       }
 
       @media only screen and (max-width: 800px) {
