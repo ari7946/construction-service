@@ -87,5 +87,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
-<!-- AUTO-GENERATED-CONTENT:END -->
->>>>>>> 7cac47ecbf920141c8c85f21b30cb601aaa62360
