@@ -1,6 +1,12 @@
 .projects-container {
   margin-top: 3.5rem;
   padding-bottom: 10rem;
+
+  h3 {
+    text-align: center;
+    color: var(--color-blue-dark);
+    text-transform: uppercase;
+  }
 }
 
 .projects-menu {

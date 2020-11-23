@@ -59,6 +59,7 @@ const Menu = () => {
                 className={menuStyles.navItem}
                 activeClassName={menuStyles.activeNavItem}
                 to="/projects"
+                partiallyActive={true}
               >
                 Projects
               </Link>

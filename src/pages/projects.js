@@ -63,7 +63,7 @@ const ProjectsPage = () => {
             )
           })}
         </div>
-
+        <h3>All Projects</h3>
         <ProjectsGrid images={allRandomProjectImages} />
       </div>
     </Layout>
