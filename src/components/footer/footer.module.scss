@@ -20,7 +20,7 @@
     .copyrights {
       font-size: 15px;
       @media only screen and (min-width: 1050px) {
-        color: var(--color-blue-darkest);
+        color: var(--color-blue-dark);
       }
       @media only screen and (max-width: 750px) {
         text-align: center;
@@ -61,7 +61,7 @@
     @media only screen and (min-width: 1050px) {
       background: white;
       color: var(--color-grey-light-1);
-      border-top: 2px solid var(--color-blue-dark);
+      // border-top: 2px solid var(--color-blue-dark);
     }
 
     @media only screen and (max-width: 600px) {
