@@ -14,6 +14,8 @@
   }
   div {
     padding: 0.6rem 1.7rem;
-    color: var(--color-primary);
+    a {
+      color: var(--color-primary);
+    }
   }
 }
