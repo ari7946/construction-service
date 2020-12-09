@@ -26,7 +26,7 @@ const ContactInfo = () => {
 
         <div className={contactInfoStyles.contactCta}>
           <h3>EMAIL US</h3>
-          <p>juniors2016inc@gmail.com</p>
+          <p>ownbyjuniors@gmail.com</p>
         </div>
       </div>
     </div>

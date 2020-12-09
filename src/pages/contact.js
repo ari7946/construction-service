@@ -19,7 +19,7 @@ const ContactPage = () => {
     const { name, value } = event.target;
     setUserInput({ ...userInput, [name]: value })
   }
-  console.log('userInput', userInput)
+
   return (
     <Layout>
       <div className={contactStyles.contactPageContainer}>
@@ -90,23 +90,12 @@ const ContactPage = () => {
             <button className={contactStyles.contactButton}>Send Message</button>
           </form>
 
-          <div className={contactStyles.contactInfo}>
+          <div className={contactStyles.location}>
             <h3>OFFICE LOCATION</h3>
             <address>
               12150 Bloomfield Ave. Unit C
               Santa Fe Springs, CA 90670
             </address>
-            {/* <ul>
-              <li>
-                <p><span>Phone: </span>(562) 309-7784</p>
-              </li>
-              <li>
-                <p><span>Fax: </span>(562) 462-1777</p>
-              </li>
-              <li>
-                <p><span>Email: </span>juniors2016inc@gmail.com</p>
-              </li>
-            </ul> */}
             <img src={address} alt=""/>
           </div>
         </div>
