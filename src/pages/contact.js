@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Layout from "../components/layout/layout"
 import Head from "../components/head"
-import ContactInfo from '../components/contact-info/contact-info'
+import address from '../images/address.jpg';
 
 import contactStyles from './contact-page.module.scss';
 
@@ -91,11 +91,23 @@ const ContactPage = () => {
           </form>
 
           <div className={contactStyles.contactInfo}>
-            <h3>ADDRESS</h3>
+            <h3>OFFICE LOCATION</h3>
             <address>
               12150 Bloomfield Ave. Unit C
               Santa Fe Springs, CA 90670
             </address>
+            {/* <ul>
+              <li>
+                <p><span>Phone: </span>(562) 309-7784</p>
+              </li>
+              <li>
+                <p><span>Fax: </span>(562) 462-1777</p>
+              </li>
+              <li>
+                <p><span>Email: </span>juniors2016inc@gmail.com</p>
+              </li>
+            </ul> */}
+            <img src={address} alt=""/>
           </div>
         </div>
       </div>
