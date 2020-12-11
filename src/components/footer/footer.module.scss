@@ -1,5 +1,4 @@
 .footer {
-  // padding-top: 20rem;
   padding-top: 15rem;
   width: 100%;
   height: auto;
@@ -14,8 +13,6 @@
     background: rgba(0, 0, 0, 0.7);
     margin-bottom: 0;
     min-height: 4rem;
-    // text-align: center;
-    // padding: 1rem 0.5rem;
 
     .copyrights {
       font-size: 15px;
@@ -61,12 +58,10 @@
     @media only screen and (min-width: 1050px) {
       background: white;
       color: var(--color-grey-light-1);
-      // border-top: 2px solid var(--color-blue-dark);
     }
 
     @media only screen and (max-width: 600px) {
       flex-direction: column-reverse;
-      // height: 7rem;
       background-color: rgba(0, 0, 0, 0);
     }
   }

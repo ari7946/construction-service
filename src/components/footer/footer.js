@@ -1,7 +1,5 @@
 import React from 'react';
 import { graphql, useStaticQuery, Link} from 'gatsby';
-import SocialMedia from '../social-media/social-media'
-import ContactInfo from '../contact-info/contact-info'
 
 import footerStyles from './footer.module.scss';
 
