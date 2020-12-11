@@ -9,7 +9,10 @@ import Personnel from '../components/personnel/personnel'
 const indexPage = () => {
   return (
     <Layout>
-      <Head title="Home" />
+      <Head 
+        title="Home" 
+        meta="Junior's Inc is a construction company based in Los Angeles that specializes in commercial and residential projects"
+      />
       <main>
         <FeaturedProjects />
         <hr />
