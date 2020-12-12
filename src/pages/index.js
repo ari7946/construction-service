@@ -11,7 +11,7 @@ const indexPage = () => {
     <Layout>
       <Head 
         title="Home" 
-        meta="Junior's Inc is a construction company based in Los Angeles that specializes in commercial and residential projects"
+        description="Junior's Inc is a construction company based in Los Angeles that specializes in commercial and residential projects"
       />
       <main>
         <FeaturedProjects />

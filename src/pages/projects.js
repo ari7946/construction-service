@@ -53,7 +53,7 @@ const ProjectsPage = () => {
     <Layout>
       <Head 
         title="Projects" 
-        meta="Our projects include well-known establishments such as Las Brisas, Who Song & Larry's, Saint Bernard School Gym, El Torito Restaurant"  
+        description="Our projects include well-known establishments such as Las Brisas, Who Song & Larry's, Saint Bernard School Gym, El Torito Restaurant"  
       />
       <div className={projectStyles.projectsContainer}>
         <div className={projectStyles.projectsMenu}>
