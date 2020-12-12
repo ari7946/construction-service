@@ -78,7 +78,10 @@ const servicesData = [
 const ServicesPage = () => {
   return (
     <Layout className=''>
-      <Head title="Services" />
+      <Head 
+        title="Services" 
+        description="We offer a variety of services including concrete, doors and windows, drywall, electricity, excavation, floor and tile, foundation, framing, heating and cooling, masonry, roofing, stucco"
+      />
       <div className={servicesStyles.servicesContainer}>
         {servicesData.map(({ serviceName, imgSrc}) => {
           return (

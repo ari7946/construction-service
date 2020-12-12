@@ -25,7 +25,7 @@ const ContactPage = () => {
       <div className={contactStyles.contactPageContainer}>
         <Head 
           title="Contact" 
-          meta="Contact us | (562) 309-7784 | ownbyjuniors@gmail.com | 12150 Bloomfield Ave. Unit C Santa Fe Springs, CA 90670"
+          description="Contact us | (562) 309-7784 | ownbyjuniors@gmail.com | 12150 Bloomfield Ave. Unit C Santa Fe Springs, CA 90670"
         />
         <h2>Send us an Email</h2>
 
