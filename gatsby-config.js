@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const { lazy } = require("react")
+
 require("dotenv").config({
   path: `.env`,
 })
@@ -40,7 +42,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       }
     },
-    'gatsby-plugin-sharp',
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     { 
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -51,6 +54,16 @@ module.exports = {
             options: {
               maxWidth: 750,
               linkImagesToOriginal: false,
+              tracedSVG: true,
+            }
+          },
+          {
+            resolve: `gatsby-remark-images-contentful`,
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false,
+              showCaptions: false,
+              loading: true
             }
           }
         ]

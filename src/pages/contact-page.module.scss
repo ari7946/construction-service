@@ -53,9 +53,6 @@
 .inputTop {
   display: flex;
   flex-flow: row wrap;
-  // @media only screen and (max-width: 1250px) {
-  //   flex-direction: column;
-  // }
 
   @media only screen and (max-width: 750px) {
     flex-direction: column;
