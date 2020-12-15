@@ -9,6 +9,10 @@
     }
   }
 
+  form {
+    flex: 1 0 60%;
+  }
+
   input,
   textArea {
     margin-right: 1rem;
@@ -30,11 +34,12 @@
   }
 
   input {
-    width: 12rem;
+    min-width: 15rem;
+    height: 2rem;
   }
 
   textarea {
-    width: 38rem;
+    width: 90%;
     height: 7rem;
   }
 
@@ -47,7 +52,10 @@
 
 .inputTop {
   display: flex;
-  justify-content: flex-start;
+  flex-flow: row wrap;
+  // @media only screen and (max-width: 1250px) {
+  //   flex-direction: column;
+  // }
 
   @media only screen and (max-width: 750px) {
     flex-direction: column;
@@ -70,11 +78,12 @@
 }
 
 .input-subject {
-  width: 25rem !important;
+  min-width: 25rem !important;
 }
 
 .location {
   margin-left: 3rem;
+
   @media only screen and (max-width: 1050px) {
     margin-left: 0;
   }
@@ -86,12 +95,18 @@
   h3 {
     font-size: medium;
   }
-  // address {
-  //   font-style: inherit;
-  // }
+  address {
+    font-style: inherit;
+  }
 
   img {
     display: block;
-    max-height: 14rem;
+    width: 90%;
+    min-height: 14rem;
+
+    @media only screen and (max-width: 720px) {
+      height: auto;
+      width: 100%;
+    }
   }
 }
