@@ -70,8 +70,7 @@ const servicesData = [
   {
     serviceName: 'stucco',
     imgSrc: stucco,
-  }
-
+  },
 ];
 
 
