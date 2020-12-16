@@ -78,7 +78,7 @@ const FeaturedProjects = () => {
       <div className={featuredProjectsStyles.featuredProjects}>
         <div className={featuredProjectsStyles.colOne}>
           <div className={featuredProjectsStyles.imgContainer}>
-=            <Img 
+            <Img 
               fluid={images.acapulco.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
             />
