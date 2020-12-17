@@ -14,7 +14,6 @@ export const fluidImage = graphql`
 `;
 
 const ServicesCards = () => {
-  console.log('before rendering....')
   const servicesImages = useStaticQuery(graphql`
     query {
       concrete: file(relativePath: { eq: "images/services/concrete.jpg" }) {
@@ -71,7 +70,6 @@ const ServicesCards = () => {
     }
   `)
 
-  console.log('hello', servicesImages)
   const servicesData = [
     {
       serviceName: 'concrete',
@@ -126,11 +124,11 @@ const ServicesCards = () => {
       imgSrc: servicesImages.stucco.childImageSharp.fluid,
     },
   ];
-  console.log('hello', servicesData)
+
   return (
     <div className={cardStyles.servicesContainer}>
       {servicesData.map((service) => (
-        <div className={cardStyles.cardContainer}>
+        <div className={cardStyles.cardContainer} key={service.serviceName}>
           <div className={cardStyles.imageContainer}>
             <Img 
               fluid={service.imgSrc} 
