@@ -1,28 +1,35 @@
+.services-container {
+  margin-top: 3rem;
+  // width: 100%;
+  padding-bottom: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .card-container {
-  color: var(--color-primary);
-  flex-grow: 1;
-  h4 {
-    text-align: center;
-  }
-
-  .image-Container {
+  height: auto;
+  margin: 0 auto;
+  width: 20rem;
+  @media only screen and (max-width: 650px) {
     width: 100%;
-
-    @media only screen and (max-width: 650px) {
-      width: 100%;
-    }
-
-    img {
-      display: block;
-      max-width: 95%;
-      margin-bottom: 0;
-      height: auto;
-      margin: 0 auto;
-
-      @media only screen and (max-width: 650px) {
-        width: 100%;
-        height: auto;
-      }
-    }
+    height: auto;
   }
+}
+
+.image-container {
+  flex-grow: 1;
+  .image {
+    max-width: 95%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
+
+.service-name {
+  color: var(--color-primary);
+  margin-top: 0.2rem;
+  text-align: center;
 }

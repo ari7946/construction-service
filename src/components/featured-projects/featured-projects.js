@@ -4,74 +4,52 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import featuredProjectsStyles from './featured-projects.module.scss';
 
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`;
+
 const FeaturedProjects = () => {
   const images = useStaticQuery(graphql`
     query {
       acapulco: file(relativePath: { eq: "images/acapulco3.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+        ...fluidImage
       }
 
       ave12: file(relativePath: { eq: "images/ave-121.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+        ...fluidImage
       }
 
       chevys: file(relativePath: { eq: "images/chevys1.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+        ...fluidImage
       }
 
       lasBrisas: file(relativePath: { eq: "images/las-brisas1.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+        ...fluidImage
       }
 
       schoolRoof: file(relativePath: { eq: "images/school-roof1.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+        ...fluidImage
       }
 
       floorReinforcement: file(relativePath: { eq: "images/floor-reinforcement1.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+        ...fluidImage
       }
 
       whoSong: file(relativePath: { eq: "images/whosong1.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+        ...fluidImage
       }
 
       elTorito: file(relativePath: { eq: "images/el-torito1.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+        ...fluidImage
       }
     }
-`)
+  `)
 
   return (
     <section>
