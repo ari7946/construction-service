@@ -15,7 +15,7 @@ const indexPage = () => {
       />
       <main>
         <FeaturedProjects />
-        <BlockButton text="See More Projects" location='/projects' />
+        <BlockButton text="SEE MORE PROJECTS" location='projects' />
         <hr />
         <Personnel />
       </main>
