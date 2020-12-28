@@ -28,6 +28,7 @@ const Header = () => {
         </div>
         <ContactInfo />
       </header>
+      <h1 className={headerStyles.siteDescription}>Junior's Construction is a residential and commercial construction company based in Los Angeles, California.</h1>
       <Menu />
     </div>
   )

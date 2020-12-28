@@ -24,7 +24,7 @@ export const useServicesData = () => {
           ...fluidImage
         }
 
-        drywall: file(relativePath: { eq: "images/services/drywall.jpg" }) {
+        drywall: file(relativePath: { eq: "images/services/drywall2.jpg" }) {
           ...fluidImage
         }
 
