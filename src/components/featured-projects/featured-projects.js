@@ -5,10 +5,10 @@ import { useStaticQuery, graphql } from 'gatsby';
 import featuredProjectsStyles from './featured-projects.module.scss';
 
 export const fluidImage = graphql`
-  fragment fluidImage on File {
+  fragment fluidFeaturedProject on File {
     childImageSharp {
       fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   }
