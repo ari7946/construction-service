@@ -7,14 +7,15 @@ import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons"
 
 const BlockButton = props => {
   return (
-    <button className={buttonStyles.buttonContainer}>
-      <Link
-        to={props.location}
-      >
+    <Link
+      to={props.location}
+      className={buttonStyles.buttonContainer}
+    >
+      <span className={buttonStyles.buttonText}>
         {props.text}
         {' '}<FontAwesomeIcon icon={faAngleDoubleRight}/>
-      </Link>
-    </button>
+      </span>
+    </Link>
   )
 }
 
