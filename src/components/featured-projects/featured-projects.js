@@ -53,6 +53,7 @@ const FeaturedProjects = () => {
 
   return (
     <section>
+      <h2 className={featuredProjectsStyles.mainTitle}>FEATURED PROJECTS</h2>
       <div className={featuredProjectsStyles.featuredProjects}>
         <div className={featuredProjectsStyles.colOne}>
           <div className={featuredProjectsStyles.imgContainer}>
@@ -60,7 +61,7 @@ const FeaturedProjects = () => {
               fluid={images.acapulco.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
             />
-            {/* <div>Acapulco</div> */}
+            <div className={featuredProjectsStyles.projectTitle}>School Gym</div>
           </div>
 
           <div className={featuredProjectsStyles.imgContainer}>
@@ -68,7 +69,7 @@ const FeaturedProjects = () => {
               fluid={images.schoolRoof.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
             />
-            {/* <div>School Roof</div> */}
+            <div className={featuredProjectsStyles.projectTitle}>School Roof</div>
           </div>
         </div>
 
@@ -78,7 +79,7 @@ const FeaturedProjects = () => {
               fluid={images.lasBrisas.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
             />
-            {/* <div>Las Brisas</div> */}
+            <div className={featuredProjectsStyles.projectTitle}>Las Brisas</div>
           </div>
 
           <div className={featuredProjectsStyles.imgContainer}>
@@ -86,7 +87,7 @@ const FeaturedProjects = () => {
               fluid={images.floorReinforcement.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
             />
-            {/* <div>Floor Reinforcement</div> */}
+            <div className={featuredProjectsStyles.projectTitle}>Floor Reinforcement</div>
           </div>
         </div>
 
@@ -96,7 +97,7 @@ const FeaturedProjects = () => {
               fluid={images.chevys.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
             />
-            {/* <div>Chevy's</div> */}
+            <div className={featuredProjectsStyles.projectTitle}>Chevy's</div>
           </div>
 
           <div className={featuredProjectsStyles.imgContainer}>
@@ -104,7 +105,7 @@ const FeaturedProjects = () => {
               fluid={images.whoSong.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
             />
-            {/* <div>Who Song and Larry's</div> */}
+            <div className={featuredProjectsStyles.projectTitle}>Who Song and Larry's</div>
           </div>
         </div>
 
@@ -114,7 +115,7 @@ const FeaturedProjects = () => {
               fluid={images.ave12.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
             />
-            {/* <div>Bath Remodel</div> */}
+            <div className={featuredProjectsStyles.projectTitle}>Bath Remodel</div>
           </div>
 
           <div className={featuredProjectsStyles.imgContainer}>
@@ -122,7 +123,7 @@ const FeaturedProjects = () => {
               fluid={images.elTorito.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
             />
-            {/* <div>El Torito</div> */}
+            <div className={featuredProjectsStyles.projectTitle}>El Torito</div>
           </div>
         </div>
       </div>

@@ -72,56 +72,52 @@ export const useServicesData = () => {
 
     const servicesData = [
       {
-        serviceName: 'concrete',
+        serviceName: 'Concrete',
         imgSrc: servicesImages.concrete.childImageSharp.fluid,
       },
       {
-        serviceName: 'doors and windows',
+        serviceName: 'Doors and Windows',
         imgSrc: servicesImages.doorsAndWindows.childImageSharp.fluid,
       },
       {
-        serviceName: 'drywall',
+        serviceName: 'Drywall',
         imgSrc: servicesImages.drywall.childImageSharp.fluid,
       },
       {
-        serviceName: 'electricity',
+        serviceName: 'Electricity',
         imgSrc: servicesImages.electricity.childImageSharp.fluid,
       },
       {
-        serviceName: 'excavation',
+        serviceName: 'Excavation',
         imgSrc: servicesImages.excavation.childImageSharp.fluid,
       },
       {
-        serviceName: 'floor and tile',
+        serviceName: 'Floor and Tile',
         imgSrc: servicesImages.flooringAndTile.childImageSharp.fluid,
       },
       {
-        serviceName: 'foundation',
+        serviceName: 'Foundation',
         imgSrc: servicesImages.foundation.childImageSharp.fluid,
       },
       {
-        serviceName: 'framing',
+        serviceName: 'Framing',
         imgSrc: servicesImages.framing.childImageSharp.fluid,
       }, 
       {
-        serviceName: 'heating and cooling',
+        serviceName: 'Heating and Cooling',
         imgSrc: servicesImages.heatingAndCooling.childImageSharp.fluid,
       },
       {
-        serviceName: 'masonry',
+        serviceName: 'Masonry',
         imgSrc: servicesImages.masonry.childImageSharp.fluid,
       },
       {
-        serviceName: 'plumbing',
+        serviceName: 'Plumbing',
         imgSrc: servicesImages.plumbing.childImageSharp.fluid,
       },
       {
-        serviceName: 'roofing',
+        serviceName: 'Roofing',
         imgSrc: servicesImages.roofing.childImageSharp.fluid,
-      },
-      {
-        serviceName: 'stucco',
-        imgSrc: servicesImages.stucco.childImageSharp.fluid,
       },
     ];
 

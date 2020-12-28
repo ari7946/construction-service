@@ -5,6 +5,7 @@ import Head from '../components/head';
 import FeaturedProjects from '../components/featured-projects/featured-projects'
 import Personnel from '../components/personnel/personnel'
 import BlockButton from '../components/block-button/block-button'
+import LandingServices from '../components/landing-services/landing-services'
 
 const indexPage = () => {
   return (
@@ -16,6 +17,8 @@ const indexPage = () => {
       <main>
         <FeaturedProjects />
         <BlockButton text="SEE MORE PROJECTS" location='projects' />
+        <LandingServices />
+        <BlockButton text="CONTACT US FOR AN ESTIMATE" location='contact' />
         <hr />
         <Personnel />
       </main>
