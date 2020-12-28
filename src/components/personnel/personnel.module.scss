@@ -17,8 +17,12 @@
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
-    background-color: var(--color-grey-light-1);
-    box-shadow: 8px 5px 8px var(--color-grey-light-4);
+    background-color: #fff;
+    box-shadow: 2px 5px 8px var(--color-grey-light-4);
+    // border-top: 1px solid lightgrey;
+    // border-left: 1px solid lightgrey;
+    border-bottom: 2px solid var(--color-blue-dark);
+    border-right: 2px solid var(--color-blue-dark);
     @media only screen and (max-width: 750px) {
       width: 100%;
     }
@@ -27,8 +31,12 @@
       color: var(--color-primary-dark);
     }
 
+    h4 {
+      color: var(--color-blue-darkest);
+    }
+
     img {
-      border: 2px solid #f18052;
+      // border: 2px solid #f18052;
       max-width: 8rem;
       max-height: 8rem;
     }

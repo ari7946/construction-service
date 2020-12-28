@@ -1,11 +1,10 @@
 import React from "react";
-import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import Layout from '../components/layout/layout';
 import Head from '../components/head';
 import FeaturedProjects from '../components/featured-projects/featured-projects'
 import Personnel from '../components/personnel/personnel'
+import BlockButton from '../components/block-button/block-button'
 
 const indexPage = () => {
   return (
@@ -16,6 +15,7 @@ const indexPage = () => {
       />
       <main>
         <FeaturedProjects />
+        <BlockButton text="See More Projects" location='/projects' />
         <hr />
         <Personnel />
       </main>

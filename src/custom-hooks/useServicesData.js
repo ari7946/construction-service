@@ -1,3 +1,4 @@
+// currently used in the services card component
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
