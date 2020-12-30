@@ -4,6 +4,7 @@
   background: #fff;
   padding-bottom: 2rem;
   margin-bottom: 9rem;
+  box-shadow: 2px 5px 8px var(--color-grey-light-4);
   border-bottom: 2px solid var(--color-blue-dark);
   border-right: 2px solid var(--color-blue-dark);
   .title {
@@ -12,6 +13,7 @@
     font-weight: bold;
     letter-spacing: 4px;
     font-size: 25px;
+    margin-left: 2rem;
   }
 }
 
