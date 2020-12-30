@@ -19,7 +19,6 @@
 
 .cards {
   margin-top: 2rem;
-  // width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -38,10 +37,8 @@
 .image-container {
   flex-grow: 1;
   .image {
-    // border-radius: 50%;
     display: block;
     height: auto;
-    // margin: 0 auto;
     padding: 0 1rem;
   }
 }
