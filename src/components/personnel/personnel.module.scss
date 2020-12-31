@@ -28,12 +28,17 @@
       width: 100%;
     }
 
+    hgroup {
+      margin-bottom: 0;
+    }
+
     h5 {
       color: var(--color-primary-dark);
     }
 
     h4 {
       color: var(--color-blue-darkest);
+      text-align: center;
     }
 
     img {
