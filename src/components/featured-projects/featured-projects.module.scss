@@ -1,17 +1,20 @@
 .main-title {
-  padding-top: 7rem;
+  padding-top: 5rem;
   color: var(--color-primary);
   display: block;
   font-weight: bold;
   letter-spacing: 4px;
   font-size: 25px;
+  @media only screen and (max-width: 550px) {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
 }
 
 .featured-projects {
   width: 100%;
   display: grid;
   grid-template-columns: 4fr 4fr 4fr 4fr;
-  // grid-template-rows: 1fr;
   column-gap: 0.3rem;
   margin-bottom: 3rem;
 
@@ -20,19 +23,11 @@
     text-align: center;
     padding-top: 0;
     margin-bottom: 0.6rem;
-    // .title {
-    //   position: absolute;
-    //   bottom: 8px;
-    //   left: 16px;
-    //   opacity: 80%;
-    //   padding: 0 0.3rem;
-    // }
   }
 
   .project-title {
     color: var(--color-primary);
     margin-top: 0.5rem;
-    // text-transform: uppercase;
     letter-spacing: 2px;
   }
 

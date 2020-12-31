@@ -26,30 +26,28 @@
 
     .footer-menu {
       margin-top: 1.5rem;
-      ul {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+      }
+      li {
+        margin-bottom: 0;
         @media only screen and (max-width: 600px) {
-          flex-direction: column;
-          margin-bottom: 1.5rem;
+          margin-bottom: 0.5rem;
+          background-color: rgba(0, 0, 0, 0.8);
         }
-        li {
-          margin-bottom: 0;
-          @media only screen and (max-width: 600px) {
-            margin-bottom: 0.5rem;
-            background-color: rgba(0, 0, 0, 0.8);
-          }
-          .nav-item {
-            font-size: 15px;
-            color: white;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            height: 1rem;
-            @media only screen and (min-width: 1050px) {
-              // background: white;
-              color: var(--color-blue-dark);
-            }
+        .nav-item {
+          font-size: 15px;
+          color: white;
+          padding: 0.5rem 1rem;
+          text-decoration: none;
+          height: 1rem;
+          @media only screen and (min-width: 1050px) {
+            // background: white;
+            color: var(--color-blue-dark);
           }
         }
       }
