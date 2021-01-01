@@ -7,8 +7,8 @@ import contactInfoStyles from './contact-info.module.scss'
 
 const ContactInfo = () => {
   return (
-    <div className={contactInfoStyles.contactContainer}>
-      <div className={contactInfoStyles.contact}>
+    <section className={contactInfoStyles.contactContainer}>
+      <article className={contactInfoStyles.contact}>
         <div className={contactInfoStyles.contactIcon}>
           <FontAwesomeIcon icon={faPhone} size="2x" />
         </div>
@@ -17,9 +17,9 @@ const ContactInfo = () => {
           <h3>CALL US</h3>
           <p>(562) 309-7784</p>
         </div>
-      </div>
+      </article>
 
-      <div className={contactInfoStyles.contact}>
+      <article className={contactInfoStyles.contact}>
         <div className={contactInfoStyles.contactIcon}>
           <FontAwesomeIcon icon={faEnvelope} size="2x" />
         </div>
@@ -28,8 +28,8 @@ const ContactInfo = () => {
           <h3>EMAIL US</h3>
           <p>ownbyjuniors@gmail.com</p>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   )
 }
 

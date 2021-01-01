@@ -1,31 +1,14 @@
 import React from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 
 import Layout from '../components/layout/layout';
 import Head from "../components/head"
 import ProjectsGrid from '../components/projects-grid/projects-grid'
 import projectStyles from './projects-page.module.scss'
+import { useProjectPageData } from '../custom-hooks/useProjectPageData';
 
 const ProjectsPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allContentfulProjects {
-        edges {
-          node {
-            name
-            media {
-              file {
-                fileName
-                url
-                contentType
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-  
+  const data = useProjectPageData();
   
   const slugify = text => {
     return text

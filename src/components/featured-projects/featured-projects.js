@@ -56,75 +56,83 @@ const FeaturedProjects = () => {
       <h2 className={featuredProjectsStyles.mainTitle}>FEATURED PROJECTS</h2>
       <div className={featuredProjectsStyles.featuredProjects}>
         <div className={featuredProjectsStyles.colOne}>
-          <div className={featuredProjectsStyles.imgContainer}>
+          <figure className={featuredProjectsStyles.imgContainer}>
             <Img 
               fluid={images.acapulco.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
+              alt='Acapulco'
             />
-            <div className={featuredProjectsStyles.projectTitle}>School Gym</div>
-          </div>
+            <figcaption className={featuredProjectsStyles.projectTitle}>School Gym</figcaption>
+          </figure>
 
-          <div className={featuredProjectsStyles.imgContainer}>
+          <figure className={featuredProjectsStyles.imgContainer}>
             <Img 
               fluid={images.schoolRoof.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
+              alt='School roof'
             />
-            <div className={featuredProjectsStyles.projectTitle}>School Roof</div>
-          </div>
+            <figcaption className={featuredProjectsStyles.projectTitle}>School Roof</figcaption>
+          </figure>
         </div>
 
         <div className={featuredProjectsStyles.colTwo}>
-          <div className={featuredProjectsStyles.imgContainer}>
+          <figure className={featuredProjectsStyles.imgContainer}>
             <Img 
               fluid={images.lasBrisas.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
+              alt='Las brisas'
             />
-            <div className={featuredProjectsStyles.projectTitle}>Las Brisas</div>
-          </div>
+            <figcaption className={featuredProjectsStyles.projectTitle}>Las Brisas</figcaption>
+          </figure>
 
-          <div className={featuredProjectsStyles.imgContainer}>
+          <figure className={featuredProjectsStyles.imgContainer}>
             <Img 
               fluid={images.floorReinforcement.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
+              alt='Floor reinforcement'
             />
-            <div className={featuredProjectsStyles.projectTitle}>Floor Reinforcement</div>
-          </div>
+            <figcaption className={featuredProjectsStyles.projectTitle}>Floor Reinforcement</figcaption>
+          </figure>
         </div>
 
         <div className={featuredProjectsStyles.colThree}>
-          <div className={featuredProjectsStyles.imgContainer}>
+          <figure className={featuredProjectsStyles.imgContainer}>
             <Img 
               fluid={images.chevys.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
+              alt='Chevys'
             />
-            <div className={featuredProjectsStyles.projectTitle}>Chevy's</div>
-          </div>
+            <figcaption className={featuredProjectsStyles.projectTitle}>Chevy's</figcaption>
+          </figure>
 
-          <div className={featuredProjectsStyles.imgContainer}>
+          <figure className={featuredProjectsStyles.imgContainer}>
             <Img 
               fluid={images.whoSong.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
+              alt="Who Song and Larry's"
             />
-            <div className={featuredProjectsStyles.projectTitle}>Who Song and Larry's</div>
-          </div>
+            <figcaption className={featuredProjectsStyles.projectTitle}>Who Song and Larry's</figcaption>
+          </figure>
         </div>
 
         <div className={featuredProjectsStyles.colFour}>
-          <div className={featuredProjectsStyles.imgContainer}>
+          <figure className={featuredProjectsStyles.imgContainer}>
             <Img 
               fluid={images.ave12.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
+              alt="Ave 12 aparments"
             />
-            <div className={featuredProjectsStyles.projectTitle}>Bath Remodel</div>
-          </div>
+            <figcaption className={featuredProjectsStyles.projectTitle}>Bath Remodel</figcaption>
+          </figure>
 
-          <div className={featuredProjectsStyles.imgContainer}>
+          <figure className={featuredProjectsStyles.imgContainer}>
             <Img 
               fluid={images.elTorito.childImageSharp.fluid} 
               className={featuredProjectsStyles.featuredImage}
+              alt="El Torito"
             />
-            <div className={featuredProjectsStyles.projectTitle}>El Torito</div>
-          </div>
+            <figcaption className={featuredProjectsStyles.projectTitle}>El Torito</figcaption>
+          </figure>
         </div>
       </div>
     </section>

@@ -28,12 +28,18 @@
       width: 100%;
     }
 
-    h5 {
-      color: var(--color-primary-dark);
+    hgroup {
+      margin-bottom: 0;
     }
 
-    h4 {
+    .name {
+      color: var(--color-primary-dark);
+      text-align: center;
+    }
+
+    .title {
       color: var(--color-blue-darkest);
+      text-align: center;
     }
 
     img {

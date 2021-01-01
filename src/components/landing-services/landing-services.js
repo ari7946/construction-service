@@ -6,11 +6,11 @@ import { useServicesData } from '../../custom-hooks/useServicesData';
 const LandingServices = () => {
   const servicesData = useServicesData();
   return (
-    <div className={ServicesStyles.servicesContainer}>
+    <section className={ServicesStyles.servicesContainer}>
       <h2 className={ServicesStyles.title}>SERVICES</h2>
-      <div className={ServicesStyles.cards}>
+      <article className={ServicesStyles.cards}>
         {servicesData.map((service) => (
-          <div className={ServicesStyles.cardContainer} key={service.serviceName}>
+          <figure className={ServicesStyles.cardContainer} key={service.serviceName}>
             <div className={ServicesStyles.imageContainer}>
               <Img 
                 fluid={service.imgSrc} 
@@ -18,11 +18,11 @@ const LandingServices = () => {
                 className={ServicesStyles.image}
               />
             </div>
-            <h4 className={ServicesStyles.serviceName}>{service.serviceName}</h4>
-          </div>
+            <figcaption className={ServicesStyles.serviceName}>{service.serviceName}</figcaption>
+          </figure>
         ))}
-      </div>
-    </div>
+      </article>
+    </section>
 
   )
 }
