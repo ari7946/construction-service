@@ -10,8 +10,8 @@ const Personnel = () => {
       <article className={personnelStyles.personCard}>
         <img src={carlos} alt="CARLOS SALAZAR" />
         <hgroup>
-          <h4>CARLOS SALAZAR</h4>
-          <h5>New Projects Manager</h5>
+          <h4 className={personnelStyles.name}>CARLOS SALAZAR</h4>
+          <h5 className={personnelStyles.title}>New Projects Manager</h5>
         </hgroup>
         <p className={personnelStyles.description}>
           Carlos has 6 years of experience in wood framing, demo, drywall,
@@ -22,8 +22,8 @@ const Personnel = () => {
       <article className={personnelStyles.personCard}>
         <img src={victor} alt="VICTOR LOPEZ" />
         <hgroup>
-          <h4>VICTOR LOPEZ</h4>
-          <h5>General Projects Manager</h5>
+          <h4 className={personnelStyles.name}>VICTOR LOPEZ</h4>
+          <h5 className={personnelStyles.title}>General Projects Manager</h5>
         </hgroup>
         <p className={personnelStyles.description}>
           Victor has 16 years of experience in metal and wood framing, drywall,

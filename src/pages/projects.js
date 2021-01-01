@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 
 import Layout from '../components/layout/layout';
 import Head from "../components/head"

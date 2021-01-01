@@ -9,6 +9,17 @@
     }
   }
 
+  fieldset {
+    border: none;
+  }
+
+  legend {
+    font-size: 23px;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+
   form {
     flex: 1 0 60%;
   }

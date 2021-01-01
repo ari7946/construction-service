@@ -2,7 +2,6 @@ import React from 'react';
 
 import Header from '../header/header';
 import Footer from '../footer/footer';
-import Menu from '../menu/menu'
 
 import '../../styles/index.scss';
 import layoutStyles from './layout.module.scss';

@@ -32,11 +32,12 @@
       margin-bottom: 0;
     }
 
-    h5 {
+    .name {
       color: var(--color-primary-dark);
+      text-align: center;
     }
 
-    h4 {
+    .title {
       color: var(--color-blue-darkest);
       text-align: center;
     }
