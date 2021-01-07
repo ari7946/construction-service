@@ -1,7 +1,7 @@
 import React from 'react';
 import gridStyles from './projects-grid.module.scss';
 
-const ProjectsMenu = (props) => {
+const ProjectsGrid = (props) => {
   return (
     <div className={gridStyles.gridContainer}>
       {props.images.map((imgUrl) => {
@@ -18,4 +18,4 @@ const ProjectsMenu = (props) => {
   )
 }
 
-export default ProjectsMenu;
+export default ProjectsGrid;
