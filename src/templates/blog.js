@@ -46,7 +46,7 @@ const Blog = (props) => {
 
   return (
     <Layout>
-      <div className={blogStyles.blogTemplateContainer}>
+      <article className={blogStyles.blogTemplateContainer}>
         <Head title={props.data.contentfulBlogPost.title} />
         <h3 className={blogStyles.back}>
           <Link to="/blog">
@@ -57,7 +57,7 @@ const Blog = (props) => {
         <h1>{props.data.contentfulBlogPost.title}</h1>
         <p>{props.data.contentfulBlogPost.publishedDate}</p>
         {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
-      </div>
+      </article>
     </Layout>
   )
 }
