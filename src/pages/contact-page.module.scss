@@ -14,10 +14,13 @@
   }
 
   legend {
-    font-size: 23px;
-    margin-bottom: 1rem;
+    font-weight: 300;
     color: var(--color-primary);
+    display: block;
     font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 25px;
+    margin-bottom: 1.5rem;
   }
 
   form {

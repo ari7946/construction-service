@@ -30,7 +30,7 @@ const ContactPage = () => {
 
         <div className={contactStyles.mainContainer}>        
           <form>
-            <legend>Send us an Email</legend>
+            <legend>EMAIL US</legend>
             <fieldset>
               <div className={contactStyles.inputTop}>
                 <div className={contactStyles.inputContainer}>
