@@ -1,6 +1,13 @@
 .blog-template-container {
-  margin-top: 3.5rem;
-  padding-bottom: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  padding: 2rem;
+  background: #fff;
+
+  .title {
+    color: var(--color-primary);
+  }
 
   .back {
     a {
