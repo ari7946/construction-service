@@ -1,15 +1,13 @@
+@import "../../styles/styles.scss";
+
 .button-container {
+  @include theme-border(1px, 2px, 2px, 1px);
   display: block;
   width: 100%;
   padding: 2rem 0;
   background: white;
   text-decoration: none;
   cursor: pointer;
-  border: none;
-  border-top: 1px solid lightgrey;
-  border-left: 1px solid lightgrey;
-  border-bottom: 2px solid var(--color-blue-dark);
-  border-right: 2px solid var(--color-blue-dark);
   .button-text {
     color: var(--color-primary);
     display: block;

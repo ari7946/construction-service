@@ -1,0 +1,6 @@
+@mixin theme-border($top, $right, $bottom, $left) {
+  border-top: $top solid lightgrey;
+  border-right: $right solid var(--color-blue-dark);
+  border-bottom: $bottom solid var(--color-blue-dark);
+  border-left: $left solid lightgrey;
+}
