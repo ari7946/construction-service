@@ -27,7 +27,14 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       }
     },
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        // https://stackoverflow.com/questions/57833884/include-sass-in-gatsby-globally
+        // This allows us to use sass variables, mixins. ect without explicitly importing it at the component level
+        data: `@import "${__dirname}/src/styles/styles";`,
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

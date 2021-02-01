@@ -4,7 +4,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 import ContactInfo from '../contact-info/contact-info';
 
 import headerStyles from './header.module.scss'
-import logo from '../../images/logo31.png'
+import logo from '../../images/logo5.png'
 import Menu from '../menu/menu';
 
 const Header = () => {
@@ -24,6 +24,9 @@ const Header = () => {
         <div className={headerStyles.logo}>
           <Link to="/">
             <img src={logo} alt={data.site.siteMetadata.title} />
+            <div className={headerStyles.brandName}>
+              <span>Junior's </span><br /><span>Construction </span><br /><span>Inc.</span>
+            </div>
           </Link>
         </div>
         <ContactInfo />

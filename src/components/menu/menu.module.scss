@@ -64,10 +64,12 @@
       .nav-item {
         padding: 1rem 2rem;
         color: var(--color-blue-dark);
-        font-size: 1rem;
+        font-size: 0.9rem;
         text-decoration: none;
         font-weight: 600;
         text-transform: uppercase;
+        text-shadow: 1px 1px 1px;
+        letter-spacing: 2px;
         // background-color: var(--color-blue-lightest);
 
         @media only screen and (max-width: 650px) {

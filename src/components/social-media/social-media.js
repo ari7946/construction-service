@@ -13,12 +13,12 @@ const SocialMedia = () => {
         </a>
       </div>
       <div>
-        <a href="https://www.instagram.com/ownbyjrs/">
-          <FontAwesomeIcon href="https://www.instagram.com/ownbyjrs/" icon={faInstagram} size="2x" target="_blank"/>
+        <a href="#">
+          <FontAwesomeIcon href="#" icon={faInstagram} size="2x" target="_blank"/>
         </a>
       </div>
       <div>
-        <a href="https://www.instagram.com/ownbyjrs/">
+        <a href="#">
           <FontAwesomeIcon href="#" icon={faYelp} size="2x" target="_blank"/>
         </a>
       </div>
