@@ -18,7 +18,7 @@ const Footer = () => {
     <footer className={footerStyles.footer}>
       <div className={footerStyles.footerContainer}>
         <small className={footerStyles.copyrights}>
-          Copyrights © 2020 All Rights Reserved by {data.site.siteMetadata.author}
+          Copyrights © 2021 All Rights Reserved by {data.site.siteMetadata.author}
         </small>
 
         <ul className={footerStyles.footerMenu}>
