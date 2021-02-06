@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Layout from "../components/layout/layout"
 import Head from "../components/head"
@@ -6,7 +8,25 @@ import address from '../images/address.jpg';
 
 import contactStyles from './contact-page.module.scss';
 
+export const fluidImage = graphql`
+  fragment fluidFeaturedProject on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  }
+`;
+
 const ContactPage = () => {
+  const addressImg = useStaticQuery(graphql`
+    query {
+      address: file(relativePath: { eq: "images/address.jpg" }) {
+        ...fluidImage
+      }
+    }
+  `)
+
   const [userInput, setUserInput] = useState({
     name: '',
     email: '',
@@ -101,7 +121,12 @@ const ContactPage = () => {
               12150 Bloomfield Ave. Unit C
               Santa Fe Springs, CA 90670
             </address>
-            <img src={address} alt="office address: 12150 Bloomfield Ave. Unit C Santa Fe Springs, CA 90670"/>
+            {/* <img src={address} alt="office address: 12150 Bloomfield Ave. Unit C Santa Fe Springs, CA 90670"/> */}
+            <Img 
+              fluid={addressImg.address.childImageSharp.fluid} 
+              className={contactStyles.locationImg}
+              alt='Location'
+            />
           </article>
         </div>
       </section>
