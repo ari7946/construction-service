@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { slugify } from '../utils';
 
 import Layout from '../components/layout/layout';
 import Head from "../components/head"
@@ -9,18 +10,6 @@ import { useProjectPageData } from '../custom-hooks/useProjectPageData';
 
 const ProjectsPage = () => {
   const data = useProjectPageData();
-  
-  const slugify = text => {
-    return text
-      .toString()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .toLowerCase()
-      .trim()
-      .replace(/\s+/g, "-")
-      .replace(/[^\w-]+/g, "")
-      .replace(/--+/g, "-")
-  }
 
   const getAllProjectImages = () => {
     return data.allContentfulProjects.edges.map(({ node }) => {
@@ -43,7 +32,10 @@ const ProjectsPage = () => {
           {data.allContentfulProjects.edges.map(({ node }) => {
             let slug = slugify(node.name);
             return (
-              <Link to={`${slug}`}>
+              <Link 
+                to={`${slug}`}
+                key={node.name}
+              >
                 {node.name}
               </Link>
             )
