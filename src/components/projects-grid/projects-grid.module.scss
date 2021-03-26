@@ -6,6 +6,7 @@
 
   .grid-image-container {
     flex: 1 0 auto;
+    margin: .6rem;
     height: auto;
     position: relative;
     @media only screen and (max-width: 600px) {
@@ -18,7 +19,6 @@
       width: 100%;
       height: auto;
       object-fit: cover;
-      padding-right: 0.4rem;
       margin-bottom: 0.4rem;
 
       @media only screen and (max-width: 1600px) {
