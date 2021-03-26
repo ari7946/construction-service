@@ -54,7 +54,7 @@ const ContactPage = () => {
             <fieldset>
               <div className={contactStyles.inputTop}>
                 <div className={contactStyles.inputContainer}>
-                  <label for="name">Name *</label><br />
+                  <label htmlFor="name">Name *</label><br />
                   <input 
                     type="text"
                     name="name"
@@ -66,7 +66,7 @@ const ContactPage = () => {
                 </div>
 
                 <div className={contactStyles.inputContainer}>
-                  <label for="email">Email</label><br />
+                  <label htmlFor="email">Email</label><br />
                   <input 
                     type="text"
                     name="email"
@@ -76,7 +76,7 @@ const ContactPage = () => {
                 </div>
 
                 <div className={contactStyles.inputContainer}>
-                  <label for="phone">Phone</label><br />
+                  <label htmlFor="phone">Phone</label><br />
                   <input 
                     type="text"
                     name="phone"
@@ -88,7 +88,7 @@ const ContactPage = () => {
 
               <div className={contactStyles.inputBottom}>
                 <div className={contactStyles.inputContainer}>
-                  <label for="subject">Subject *</label><br />
+                  <label htmlFor="subject">Subject *</label><br />
                   <input 
                     className={contactStyles.inputSubject} 
                     type="text"
@@ -100,7 +100,7 @@ const ContactPage = () => {
                 </div>
 
                 <div className={contactStyles.inputContainer}>
-                  <label for="message">Message *</label><br />
+                  <label htmlFor="message">Message *</label><br />
                   <textarea 
                     type="textarea"
                     name="message"

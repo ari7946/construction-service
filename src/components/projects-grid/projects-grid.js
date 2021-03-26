@@ -6,7 +6,7 @@ const ProjectsGrid = (props) => {
     <div className={gridStyles.gridContainer}>
       {props.images.map((imgUrl) => {
         return (
-          <div className={gridStyles.gridImageContainer}>
+          <div className={gridStyles.gridImageContainer} key={imgUrl}>
             <img 
               className={gridStyles.gridImage} 
               src={imgUrl} 
