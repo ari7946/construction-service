@@ -122,11 +122,26 @@ const ContactPage = () => {
               Santa Fe Springs, CA 90670
             </address>
             {/* <img src={address} alt="office address: 12150 Bloomfield Ave. Unit C Santa Fe Springs, CA 90670"/> */}
-            <Img 
+            {/* <Img 
               fluid={addressImg.address.childImageSharp.fluid} 
               className={contactStyles.locationImg}
               alt='Location'
-            />
+            /> */}
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1655.3960397064675!2d-118.06357160750977!3d33.92075048054697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d326fe300001%3A0x287e202e7e4cf3c1!2s12150%20Bloomfield%20Ave%20Suite%20C%2C%20Santa%20Fe%20Springs%2C%20CA%2090670!5e0!3m2!1sen!2sus!4v1638664865312!5m2!1sen!2sus"
+                width="400"
+                height="400"
+                frameBorder="0"
+                style={{ 
+                  borderRight: "2px solid #20639b",
+                  borderBottom: "2px solid #20639b"
+                }}
+                allowFullScreen=""
+                aria-hidden="false"
+                tabIndex="0"
+              />
+            </div>
           </article>
         </div>
       </section>
