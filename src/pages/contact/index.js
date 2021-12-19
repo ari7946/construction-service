@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import Layout from "../components/layout/layout"
-import Head from "../components/head"
-import address from '../images/address.jpg';
+import Layout from "../../components/layout/layout"
+import Head from "../../components/head"
+// import address from '../../images/address.jpg';
 
 import contactStyles from './contact-page.module.scss';
 

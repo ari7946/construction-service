@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { slugify } from '../utils';
+import { slugify } from '../../utils';
 
-import Layout from '../components/layout/layout';
-import Head from "../components/head"
-import ProjectsGrid from '../components/projects-grid/projects-grid'
+import Layout from '../../components/layout/layout';
+import Head from "../../components/head"
+import ProjectsGrid from '../../components/projects-grid/projects-grid'
 import projectStyles from './projects-page.module.scss'
-import { useProjectPageData } from '../custom-hooks/useProjectPageData';
+import { useProjectPageData } from '../../custom-hooks/useProjectPageData';
 
 const ProjectsPage = () => {
   const data = useProjectPageData();
