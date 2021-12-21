@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/layout/layout';
-import Head from "../components/head";
-import ServicesCards from '../components/landing-services/landing-services';
+import Layout from '../../components/layout/layout';
+import Head from "../../components/head";
+import ServicesCards from '../../components/landing-services/landing-services';
 import servicesStyles from './services-page.module.scss';
 
 const ServicesPage = () => {
