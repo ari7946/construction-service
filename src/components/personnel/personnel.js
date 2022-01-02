@@ -18,7 +18,7 @@ const Personnel = () => {
           concrete work, painting, tile work and estimating.
         </p>
       </article>
-
+       
       <article className={personnelStyles.personCard}>
         <img src={victor} alt="VICTOR LOPEZ" />
         <hgroup>
