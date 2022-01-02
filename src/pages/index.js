@@ -20,7 +20,7 @@ const indexPage = () => {
         <LandingServices />
         <BlockButton text="CONTACT US FOR AN ESTIMATE" location='contact' />
         <hr />
-        <Personnel />
+        {/* <Personnel /> */}
       </main>
     </Layout>
   )
