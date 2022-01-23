@@ -19,7 +19,6 @@ const indexPage = () => {
         <BlockButton text="SEE MORE PROJECTS" location='projects' />
         <LandingServices />
         <BlockButton text="CONTACT US FOR AN ESTIMATE" location='contact' />
-        <hr />
         {/* <Personnel /> */}
       </main>
     </Layout>
