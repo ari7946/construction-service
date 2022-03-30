@@ -1,7 +1,7 @@
-import React from 'react';
-import { graphql, useStaticQuery, Link} from 'gatsby';
+import React from "react"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
-import footerStyles from './footer.module.scss';
+import footerStyles from "./footer.module.scss"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -18,44 +18,55 @@ const Footer = () => {
     <footer className={footerStyles.footer}>
       <div className={footerStyles.footerContainer}>
         <small className={footerStyles.copyrights}>
-          Copyrights © 2021 All Rights Reserved by {data.site.siteMetadata.author}
+          Copyrights © 2022 All Rights Reserved by{" "}
+          {data.site.siteMetadata.author}
         </small>
 
         <ul className={footerStyles.footerMenu}>
           <li>
-            <Link 
+            <Link
               className={footerStyles.navItem}
               activeClassName={footerStyles.activeNavItem}
               to="/"
-            >HOME</Link>
+            >
+              HOME
+            </Link>
           </li>
           <li>
-            <Link 
+            <Link
               className={footerStyles.navItem}
               activeClassName={footerStyles.activeNavItem}
               to="/projects"
-            >PROJECTS</Link>
+            >
+              PROJECTS
+            </Link>
           </li>
           <li>
-            <Link 
+            <Link
               className={footerStyles.navItem}
               activeClassName={footerStyles.activeNavItem}
               to="/services"
-            >SERVICES</Link>
+            >
+              SERVICES
+            </Link>
           </li>
           <li>
-            <Link 
+            <Link
               className={footerStyles.navItem}
               activeClassName={footerStyles.activeNavItem}
               to="/blog"
-            >BLOG</Link>
+            >
+              BLOG
+            </Link>
           </li>
           <li>
-            <Link 
+            <Link
               className={footerStyles.navItem}
               activeClassName={footerStyles.activeNavItem}
               to="/contact"
-            >CONTACT</Link>
+            >
+              CONTACT
+            </Link>
           </li>
         </ul>
       </div>
@@ -63,5 +74,4 @@ const Footer = () => {
   )
 }
 
-
-export default Footer;
+export default Footer
