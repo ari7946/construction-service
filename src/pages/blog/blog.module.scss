@@ -26,13 +26,17 @@
 }
 
 .post {
-  margin: 1rem 0;
+  margin: 2rem 0;
   width: 75%;
-  // border-bottom: 1px solid var(--color-grey-dark-3);
-  // border-right: 1px solid var(--color-grey-dark-3);
-  box-shadow: 5px 5px 5px var(--color-grey-light-4);
+  border-top: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-bottom: 2px solid var(--color-blue-dark);
+  border-right: 2px solid var(--color-blue-dark);
   padding: 0.5rem 0.8rem 0.5rem 0;
   background-color: #ffffff;
+  :hover {
+    background-color: lightgray;
+  }
   a {
     // background: #f4f4;
     color: var(--color-blue-dark);

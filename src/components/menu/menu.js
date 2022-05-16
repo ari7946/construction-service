@@ -1,34 +1,34 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
 
-import menuStyles from './menu.module.scss'
-import SocialMedia from '../social-media/social-media'
+import menuStyles from "./menu.module.scss"
+import SocialMedia from "../social-media/social-media"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Menu = () => {
-  const [status, setStatus] = useState(false);
-  const [isDesktop, setDesktop] = useState(true);
+  const [status, setStatus] = useState(false)
+  const [isDesktop, setDesktop] = useState(true)
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 800);
-  };
+    setDesktop(window.innerWidth > 800)
+  }
 
   useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    updateMedia();
-    return () => window.removeEventListener("resize", updateMedia);
-  });
+    window.addEventListener("resize", updateMedia)
+    updateMedia()
+    return () => window.removeEventListener("resize", updateMedia)
+  })
 
   const isOpen = () => {
     if (isDesktop) {
-      return true;
+      return true
     } else if (status) {
-      return true;
+      return true
     } else if (!status) {
-      return false;
-    } 
+      return false
+    }
   }
   // console.log('status', status);
   // console.log('isDesktop', isDesktop)
@@ -36,66 +36,70 @@ const Menu = () => {
   return (
     <>
       <nav className={menuStyles.menuContainer}>
-        <div 
+        <div
           className={menuStyles.closeButton}
           onClick={() => setStatus(!status)}
         >
           <FontAwesomeIcon icon={status ? faTimes : faBars} />
         </div>
-        {isOpen() &&
+        {isOpen() && (
           <ul className={menuStyles.navList}>
             <li>
-              <Link
+              <AniLink
                 className={menuStyles.navItem}
+                fade
                 activeClassName={menuStyles.activeNavItem}
                 to="/"
               >
                 Home
-              </Link>
+              </AniLink>
             </li>
 
             <li>
-              <Link
+              <AniLink
                 className={menuStyles.navItem}
                 activeClassName={menuStyles.activeNavItem}
                 to="/projects"
-                partiallyActive={true}
+                fade
               >
                 Projects
-              </Link>
+              </AniLink>
             </li>
 
             <li>
-              <Link
+              <AniLink
                 className={menuStyles.navItem}
                 activeClassName={menuStyles.activeNavItem}
                 to="/services"
+                fade
               >
                 Services
-              </Link>
+              </AniLink>
             </li>
 
             <li>
-              <Link
+              <AniLink
                 className={menuStyles.navItem}
                 activeClassName={menuStyles.activeNavItem}
                 to="/blog"
+                fade
               >
                 Blog
-              </Link>
+              </AniLink>
             </li>
-            
+
             <li>
-              <Link
+              <AniLink
                 className={menuStyles.navItem}
                 activeClassName={menuStyles.activeNavItem}
                 to="/contact"
+                fade
               >
                 Contact
-              </Link>
+              </AniLink>
             </li>
           </ul>
-        }
+        )}
 
         <SocialMedia />
       </nav>

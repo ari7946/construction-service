@@ -1,6 +1,10 @@
 .contact-page-container {
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   padding-bottom: 10rem;
+  padding-top: 1rem;
+  background: #fff;
+  margin-bottom: 5rem;
+  border-bottom: 2px solid var(--color-blue-dark);
   .main-container {
     display: flex;
 
@@ -93,8 +97,7 @@
 }
 
 .location {
-  margin-left: 3rem;
-
+  margin-right: 1rem;
   @media only screen and (max-width: 1050px) {
     margin-left: 0;
   }
