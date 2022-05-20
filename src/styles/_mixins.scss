@@ -4,3 +4,15 @@
   border-bottom: $bottom solid var(--color-blue-dark);
   border-left: $left solid lightgrey;
 }
+
+@mixin theme-box-shadow($shadow1, $shadow2, $border-size, $has-hover) {
+  box-shadow: $shadow1 $shadow2 var(--color-blue-dark);
+  border: $border-size solid var(--color-blue-dark);
+
+  @if $has-hover {
+    &:hover {
+      box-shadow: 1px 1px var(--color-blue-dark);
+      background-color: var(--color-grey-light-1);
+    }
+  }
+}
