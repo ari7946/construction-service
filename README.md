@@ -2,7 +2,9 @@ _Junior's Construction Inc._
 
 https://www.juniorsinc.com/
 
-command for local dev: npx gatsby build
+command for local dev: 
+npx gatsby build
+npm run develop
 
 ## 🚀 Quick start
 
